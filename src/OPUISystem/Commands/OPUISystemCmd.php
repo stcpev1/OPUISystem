@@ -28,7 +28,7 @@ class OPUISystemCmd extends PluginCommand{
             $form = $this->getPlugin()->createCustomForm(function(Player $sender, array $data){
               $result = $data[0];
               if($result != null){
-                $opcmd = "op ".$result." ".$data[0];
+                $opcmd = "op ".$data[0];
                 $this->getPlugin()->getServer()->getCommandMap()->dispatch($sender->getPlayer(), $opcmd);
               }
             });
