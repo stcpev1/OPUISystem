@@ -17,7 +17,7 @@ class OPUISystemCmd extends PluginCommand{
 
     public function __construct($name, Main $plugin){
         parent::__construct($name, $plugin);
-        $this->setDescription("Open OPSystem UI");
+        $this->setDescription("§c§lRobo§4PE Open OP System UI");
         $this->setAliases(["OPUI", "opui"]);
         $this->setPermission("pocketmine.command.opui");
     }
@@ -32,12 +32,12 @@ class OPUISystemCmd extends PluginCommand{
                 $this->getPlugin()->getServer()->getCommandMap()->dispatch($sender->getPlayer(), $opcmd);
               }
             });
-            $form->setTitle("§l§aOP");
-            $form->addInput("§bUser");
+            $form->setTitle("OP");
+            $form->addInput("User");
             $form->sendToPlayer($sender);
           }
         }else{
-          $sender->sendMessage("§cYou are not In-Game.");
+          $sender->sendMessage("§cYou Are Not In-Game");
         }
     return true;
   }
@@ -52,12 +52,12 @@ class OPUISystemCmd extends PluginCommand{
                 $this->getPlugin()->getServer()->getCommandMap()->dispatch($sender->getPlayer(), $opcmd);
               }
             });
-            $form->setTitle("§l§cDEOP");
-            $form->addInput("§bUser");
+            $form->setTitle("DEOP");
+            $form->addInput("User");
             $form->sendToPlayer($sender);
           }
         }else{
-          $sender->sendMessage("§cYou are not In-Game.");
+          $sender->sendMessage("§cYou Are Not In-Game");
         }
     return true;
   }
@@ -78,14 +78,14 @@ class OPUISystemCmd extends PluginCommand{
 		break;
               }
             });
-            $form->setTitle("§l§aOP§eSystem");
+            $form->setTitle("§c§lRobo§4PE §aSystem");
             $form->addButton("");
-            $form->addButton("§bOP", 1);
-            $form->addButton("§bDEOP", 2);
+            $form->addButton("OP", 1);
+            $form->addButton("DEOP", 2);
             $form->sendToPlayer($sender);
           }
         }else{
-          $sender->sendMessage("§cYou are not In-Game.");
+          $sender->sendMessage("§cYou Are Not In-Game");
         }
     return true;
   }
