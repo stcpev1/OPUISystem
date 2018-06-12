@@ -1,7 +1,2 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/xXNiceAssasinl0/OPUISystem
-branches:
-- master
-projects:
-  OPUISystem:
-    path: ""
+---
 ...
