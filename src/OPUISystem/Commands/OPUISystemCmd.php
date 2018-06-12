@@ -78,7 +78,7 @@ class OPUISystemCmd extends PluginCommand{
 		break;
               }
             });
-            $form->setTitle("§c§lRobo§4PE §aSystem");
+            $form->setTitle("§c§lRobo§4PE §fOPUI §aSystem");
             $form->addButton("");
             $form->addButton("OP", 1);
             $form->addButton("DEOP", 2);
