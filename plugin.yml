@@ -1,6 +1,6 @@
 name: OPUISystem
 version: 1.0.0
-api: [CLA, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
+api: [3.0.0]
 main: OPUISystem\Main
 author: xXNiceYT
-authors: stcpev1,xXNiceYT
+authors: stcpev1,xXNiceYT,LegendSound
